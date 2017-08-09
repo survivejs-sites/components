@@ -41,5 +41,13 @@
     "react-github-corner": "^0.3.0",
     "react-router-dom": "^4.1.2",
     "title-case": "^2.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/survivejs-sites/components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/survivejs-sites/components/issues"
+  },
+  "homepage": "https://github.com/survivejs-sites/components#readme"
 }
