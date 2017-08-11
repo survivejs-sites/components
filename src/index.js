@@ -1,3 +1,4 @@
+import Algolia from "./Algolia";
 import Author from "./Author";
 import Buy from "./Buy";
 import Disqus from "./Disqus";
@@ -18,6 +19,7 @@ import Testimonial from "./Testimonial";
 import Toc from "./Toc";
 
 export {
+  Algolia,
   Author,
   Buy,
   Disqus,
