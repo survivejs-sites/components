@@ -15,6 +15,7 @@ import PrevNextMini from "./PrevNextMini";
 import RelatedPosts from "./RelatedPosts";
 import Resources from "./Resources";
 import SocialLinks from "./SocialLinks";
+import Teaser from "./Teaser";
 import Testimonial from "./Testimonial";
 import Toc from "./Toc";
 
@@ -36,6 +37,7 @@ export {
   RelatedPosts,
   Resources,
   SocialLinks,
+  Teaser,
   Testimonial,
   Toc
 };

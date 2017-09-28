@@ -1,6 +1,7 @@
 import React from "react";
+import Teaser from "./Teaser";
 
-const Footer = () => (
+const Footer = ({ section }) => (
   <footer>
     <div className="footer-wrapper">
       <div className="footer-content-wrapper">
@@ -71,6 +72,11 @@ const Footer = () => (
               </a>
             </li>
           </ul>
+        </div>
+        <div className="footer-blog">
+          <h3>From the Blog</h3>
+
+          <Teaser pages={section.pages("blog").slice(0, 7)} />
         </div>
       </div>
     </div>
