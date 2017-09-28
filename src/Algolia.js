@@ -1,6 +1,6 @@
 import React from "react";
 
-const Algolia = ({ apiKey, indexName, inputSelector }) =>
+const Algolia = ({ apiKey, indexName, inputSelector }) => (
   <div>
     <script
       type="text/javascript"
@@ -19,6 +19,7 @@ const Algolia = ({ apiKey, indexName, inputSelector }) =>
       `
       }}
     />
-  </div>;
+  </div>
+);
 
 export default Algolia;

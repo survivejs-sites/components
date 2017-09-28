@@ -1,10 +1,8 @@
 import React from "react";
 
-const GitterChat = ({ room = "react", title = "Need help?" }) =>
+const GitterChat = ({ room = "react", title = "Need help?" }) => (
   <div>
-    <div className="gitter-open-chat-button">
-      {title}
-    </div>
+    <div className="gitter-open-chat-button">{title}</div>
     <script
       type="text/javascript"
       dangerouslySetInnerHTML={{
@@ -18,6 +16,7 @@ const GitterChat = ({ room = "react", title = "Need help?" }) =>
       }}
     />
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer />
-  </div>;
+  </div>
+);
 
 export default GitterChat;

@@ -3,7 +3,7 @@ import React from "react";
 import titleCase from "title-case";
 import Toc from "./Toc";
 
-const RelatedPosts = ({ title, posts, headers }) =>
+const RelatedPosts = ({ title, posts, headers }) => (
   <div>
     {_.map(posts, (pages, name) => {
       if (pages.length < 2) {
@@ -20,6 +20,7 @@ const RelatedPosts = ({ title, posts, headers }) =>
         </div>
       );
     })}
-  </div>;
+  </div>
+);
 
 export default RelatedPosts;
