@@ -3,17 +3,18 @@ import Link from "./Link";
 
 const Toc = ({ sectionPages, title }) => (
   <ul className="toc-nav">
-    {sectionPages().map(({ file: { attributes }, url }, i) => (
-      <li key={`navPage${i}`} className={`toc-${attributes.type}`}>
-        {attributes.title === title ? (
+    {sectionPages().map(({ file, url }, i) => (
+      <li key={`navPage${i}`} className={`toc-${file.attributes.type}`}>
+        {file.title === title ? (
           <span
-            className={`toc-nav__link toc-nav__link--current ${attributes.type}`}
+            className={`toc-nav__link toc-nav__link--current ${file.attributes
+              .type}`}
           >
-            {attributes.title}
+            {file.title}
           </span>
         ) : (
-          <Link to={url} className={`toc-nav__link ${attributes.type}`}>
-            {attributes.title}
+          <Link to={url} className={`toc-nav__link ${file.attributes.type}`}>
+            {file.title}
           </Link>
         )}
       </li>
