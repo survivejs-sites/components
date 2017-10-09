@@ -53,12 +53,6 @@ const BuyWebpack = () => (
       >
         Buy for Kindle
       </a>
-      <a
-        className="btn btn--normal btn--buy"
-        href="https://survivejs.typeform.com/to/LUQK0T"
-      >
-        Buy Signed LE
-      </a>
     </p>
   </div>
 );
